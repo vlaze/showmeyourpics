@@ -1,0 +1,19 @@
+#!/bin/sh
+
+show() {
+run-standalone.sh dbus-send --print-reply --dest=com.nokia.image_viewer /com/nokia/image_viewer com.nokia.image_viewer.mime_open string:file://$FILEPATH
+}
+
+if [ "$1" != "" ]; then
+	case $1 in
+		[/]*)	FILEPATH=$1; show
+					;;	
+		*)	FILEPATH=$(pwd)/$1; show
+				;;
+	esac
+else
+ 	echo "But I need something to show!"
+	exit 1
+fi
+
+	
