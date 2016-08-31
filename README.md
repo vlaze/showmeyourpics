@@ -1,4 +1,4 @@
-# Let the SHOW begin.
+# Your easy-to-use command line utility for all your images
 
 This script will help you browse your images in an easier way in your Maemo device. Sometimes we need to work in directories different than MyDocs, or feeling hacky and willing to see what does that .png in your `ls` prompt inside an application folder hide.
 
